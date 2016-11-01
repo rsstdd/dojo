@@ -42,8 +42,6 @@ app.use((req, res, next) => {
   res.sendStatus(406);
 });
 
-
-
 app.use((_req, res) => {
   res.sendStatus(404);
 });
