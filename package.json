@@ -1,0 +1,40 @@
+{
+  "name": "dojofitclub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint  --ignore-pattern public/js/vendor",
+    "nf": "nf start",
+    "nodemon": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rsstdd/dojo.git"
+  },
+  "keywords": [],
+  "author": "Ross Todd <rosstod@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rsstdd/dojo/issues"
+  },
+  "homepage": "https://github.com/rsstdd/dojo#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "boom": "^4.2.0",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "express-validation": "^1.0.1",
+    "joi": "^9.2.0",
+    "request": "^2.76.0"
+  },
+  "devDependencies": {
+    "dotenv": "^2.0.0",
+    "eslint": "^3.9.1",
+    "eslint-config-ryansobol": "^9.1.1",
+    "foreman": "^2.0.0"
+  },
+  "engines": {
+    "node": "7.0.0"
+  }
+}
