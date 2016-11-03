@@ -29,6 +29,9 @@ p {
 nav {
   background-color: #434554;
 }
+.navbar-material .nav-wrapper .brand-logo img {
+    height: 64px;
+}
 
 footer.page-footer {
   background-color: #fff;
