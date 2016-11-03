@@ -1,0 +1,61 @@
+.parallax-container {
+  /*margin-top: 100px;*/
+}
+#padding {
+  height: 100px;
+}
+p {
+  line-height: 2rem;
+}
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+  .waves-effect.waves-brown .waves-ripple {
+   /* The alpha value allows the text and background color
+   of the button to still show through. */
+    background-color: rgb(254, 147, 8, 0.65);
+  }
+
+.btn {
+  border: 1px solid #fe9308;
+  margin-top: 25px;
+}
+nav {
+  background-color: #434554;
+}
+
+footer.page-footer {
+  background-color: #fff;
+}
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 10%;
+  }
+  #index-banner .section {
+    top: 5%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}

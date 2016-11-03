@@ -1,6 +1,6 @@
 'use strict'
 
-(function(){
+$(function(){
   const first = $('#first')
   const last = $('#last')
   const last = $('#last')
