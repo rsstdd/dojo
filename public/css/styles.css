@@ -32,7 +32,7 @@ nav {
 }
 
 footer.page-footer {
-  background-color: #f1f0ee;
+  background-color: #fdfcfc;
   /*border: 3px solid #4e5162;*/
 }
 @media only screen and (max-width : 1076px) {
@@ -89,10 +89,7 @@ footer.page-footer {
 #left-border {
   border-left: 1px solid #fe9308;
   padding-left: 15px;
-}
-.circle {
-  border: 1px solid #fe9308;
-  border-radius: 50%;
+  padding-bottom: 15px;
 }
 #header {
   padding-bottom: 3px;
@@ -104,15 +101,31 @@ h4, h5 , h6 {
 #nopdbtm {
   margin-bottom: 3px;
 }
+
 .orange-text {
   color:  #fe9308;
 }
+
 li. {
   color: black;
 }
+
+h4 a:hover {
+  color: #feb454;
+  text-decoration: none;
+}
+
 a:hover {
   color: #fe9308;
   text-decoration-color: #fe9308;
   text-decoration: underline;
   font-weight: bolder;
+}
+
+.tabs .tab a {
+  color:  #544a43;
+}
+
+ul .tabs .tab :active {
+  border-bottom-color:
 }
