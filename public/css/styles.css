@@ -17,8 +17,6 @@ p {
     width: 100%;
   }
   .waves-effect.waves-brown .waves-ripple {
-   /* The alpha value allows the text and background color
-   of the button to still show through. */
     background-color: rgb(254, 147, 8, 0.65);
   }
 
@@ -35,6 +33,7 @@ nav {
 
 footer.page-footer {
   background-color: #fff;
+  border: 3px solid #4e5162;
 }
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
@@ -51,6 +50,9 @@ footer.page-footer {
     top: 0;
   }
 }
+.parallax-container {
+    height: 475px;
+  }
 
 .icon-block {
   padding: 0 15px;
@@ -61,4 +63,17 @@ footer.page-footer {
 
 footer.page-footer {
   margin: 0;
+}
+#inner-trasparent {
+  background-color: rgba(85, 85, 85, 0.5);
+  padding: 25px;
+  width: 100%;
+}
+#left-border {
+  border-left: 1px solid #fe9308;
+  padding-left: 15px;
+}
+.circle {
+  border: 1px solid #fe9308;
+  border-radius: 50%;
 }
