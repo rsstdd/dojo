@@ -32,8 +32,18 @@ nav {
 }
 
 footer.page-footer {
-  background-color: #fff;
-  border: 3px solid #4e5162;
+  background-color: #f1f0ee;
+  /*border: 3px solid #4e5162;*/
+}
+@media only screen and (max-width : 1076px) {
+  #parallax-2 {
+      height: 550px;
+    }
+}
+@media only screen and (max-width : 1076px) {
+  #parallax-2 {
+      height: 700px;
+    }
 }
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
@@ -49,12 +59,17 @@ footer.page-footer {
   #index-banner .section {
     top: 0;
   }
+  #parallax-2 {
+      height: 800px;
+    }
+}
+@media only screen and (max-width : 476px) {
+  #parallax-2 {
+      height: 1420px;
+    }
 }
 .parallax-container {
-    height: 375px;
-  }
-#parallax-2 {
-    height: 800px;
+    height: 480px;
   }
 
 .icon-block {
@@ -63,7 +78,6 @@ footer.page-footer {
 .icon-block .material-icons {
   font-size: inherit;
 }
-
 footer.page-footer {
   margin: 0;
 }
@@ -87,7 +101,18 @@ h1, h2, h3,
 h4, h5 , h6 {
   text-transform: capitalize;
 }
-
 #nopdbtm {
   margin-bottom: 3px;
+}
+.orange-text {
+  color:  #fe9308;
+}
+li. {
+  color: black;
+}
+a:hover {
+  color: #fe9308;
+  text-decoration-color: #fe9308;
+  text-decoration: underline;
+  font-weight: bolder;
 }
