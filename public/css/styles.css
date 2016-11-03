@@ -51,7 +51,10 @@ footer.page-footer {
   }
 }
 .parallax-container {
-    height: 475px;
+    height: 375px;
+  }
+#parallax-2 {
+    height: 800px;
   }
 
 .icon-block {
@@ -76,4 +79,15 @@ footer.page-footer {
 .circle {
   border: 1px solid #fe9308;
   border-radius: 50%;
+}
+#header {
+  padding-bottom: 3px;
+}
+h1, h2, h3,
+h4, h5 , h6 {
+  text-transform: capitalize;
+}
+
+#nopdbtm {
+  margin-bottom: 3px;
 }
