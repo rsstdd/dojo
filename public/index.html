@@ -39,11 +39,12 @@
         </div>
       </nav> -->
 
-      <nav class="nav-extended">
+      <!-- <nav class="nav-extended">
           <div class="nav-wrapper">
-            <a href="#" class="brand-logo">
-              <img class="responsive-img" src="./images/DojoFitClubLogoWhite-155x88.png" alt="Logo Dojo &amp; Fit Club" />
-              <h4>The Dojo &amp; Fit Club</h4>
+            <a class="brand-logo center" data-activates="mobileNav">
+              <span>
+                <img class="logo-png" src="./images/DojoFitClubLogoWhite-155x88.png" alt="logo" />
+              </span>
             </a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -56,24 +57,104 @@
               <li><a href="<b></b>adges.html"></a></li>
               <li><a href="collapsible.html"></a></li>
             </ul>
-
-            <ul class="tabs tabs-transparent">
-              <li class="txt-color tab"><a href="#test1">About</a></li>
-              <li class="txt-color tab"><a href="#test2">Contact</a></li>
+tabs-transparent -->
+          <!--   <ul class="tabs ">
+              <li class="txt-color tab"><a href="#home">About</a></li>
+              <li class="txt-color tab"><a href="#">About</a></li>
+              <li class="txt-color tab"><a href="#contact">Contact</a></li>
               <li class="txt-color tab"><a href="#test3">Instructors</a></li>
               <li class="txt-color tab"><a href="#test4">Programs</a></li>
             </ul>
           </div>
-        </nav>
+          nav-extended
+        </nav> -->
+        <header class="row">
+           <nav class="nav-extended">
+             <div class="nav-wrapper">
 
-      </header>
+               <a class="brand-logo center">
+                 <span>
+                   <img class="logo-png" src="logo-nav.png" alt="logo" />
+                 </span>
+               </a>
+
+               <a class="button-collapse" data-activates="mobileNav">
+                 <i class="material-icons">menu</i>
+               </a>
+
+               <ul class="right hide-on-med-and-down">
+                 <li><a href="/index.html">Home</a></li>
+                 <li><a href="/collection.html">Aircraft</a></li>
+                 <li class="firstNavItem"></li>
+                 <li class="secondNavItem"></li>
+               </ul>
+
+               <ul id="mobileNav" class="side-nav">
+                 <li><a href="/index.html">Home</a></li>
+                 <li><a href="/collection.html">Aircraft</a></li>
+                 <li class="firstNavItem"></li>
+                 <li class="secondNavItem"></li>
+               </ul>
+
+               <ul class="tabs ">
+                  <li class="txt-color tab"><a href="#home">About</a></li>
+                  <li class="txt-color tab"><a href="#">About</a></li>
+                  <li class="txt-color tab"><a href="#contact">Contact</a></li>
+                  <li class="txt-color tab"><a href="#test3">Instructors</a></li>
+                  <li class="txt-color tab"><a href="#test4">Programs</a></li>
+                </ul>
+
+             </div>
+           </nav>
+         </header>
       <main>
+      <div id="contact" class="col s12"><main class="container">
+        <form id="contact-form" class="container-fluid">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="email" aria-describedby="formEmail" placeholder="Enter email">
+            <small id="formEmail" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Last Name</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="password" class="form-control" id="firstName" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <label for="subject">In Which Class Are You Interested</label>
+            <select class="form-control" id="subject">
+              <option>After School</option>
+              <option>Summer Camp</option>
+              <option>Tae Kwon Do</option>
+              <option>Kumdo</option>
+              <option>Kickboxing</option>
+              <option>Personal Training</option>
+              <option>Group Fitness Classes</option>
+              <option>Private Lessons</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleSelect1">Student</label>
+            <select class="form-control" id="subject">
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleTextarea">Explain Your Needs</label>
+            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+          </div>
+          <a type="submit" class="waves-effect waves-light btn transparent text-black">Schedule Your Appointment</a>
+        </form>
+      </div>
 
-    <!-- <div id="test2" class="col s12">Test 2</div>
     <div id="test3" class="col s12">Test 3</div>
     <div id="test4" class="col s12">Test 4</div>
- -->
-    <div class="parallax-container valign-wrapper">
+
+    <div id="home" class="parallax-container valign-wrapper">
       <div class="section no-pad-bot">
         <div class="container">
           <div class="row center">
