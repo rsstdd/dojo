@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="../css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   <title>Dojo &amp; Fit Club</title>
 </head>
 
@@ -74,7 +75,7 @@ tabs-transparent -->
 
                <a class="brand-logo center">
                  <span>
-                   <img class="logo-png" src="logo-nav.png" alt="logo" />
+                   <img class="logo-png" src="./logo-nav.png" alt="logo" />
                  </span>
                </a>
 
@@ -84,48 +85,49 @@ tabs-transparent -->
 
                <ul class="right hide-on-med-and-down">
                  <li><a href="/index.html">Home</a></li>
-                 <li><a href="/collection.html">Aircraft</a></li>
+                 <li><a href="/collection.html"></a></li>
                  <li class="firstNavItem"></li>
                  <li class="secondNavItem"></li>
                </ul>
 
                <ul id="mobileNav" class="side-nav">
-                 <li><a href="/index.html">Home</a></li>
-                 <li><a href="/collection.html">Aircraft</a></li>
-                 <li class="firstNavItem"></li>
-                 <li class="secondNavItem"></li>
+                 <li class="txt-color tab"><a href="#home">Home</a></li>
+                 <li class="txt-color tab"><a href="#about">About</a></li>
+                 <li class="txt-color tab"><a href="#contact">Contact</a></li>
+                 <li class="txt-color tab"><a href="#instructors">Instructors</a></li>
+                 <li class="txt-color tab"><a href="#programs">Programs</a></li>
                </ul>
 
-               <ul class="tabs ">
-                  <li class="txt-color tab"><a href="#home">About</a></li>
-                  <li class="txt-color tab"><a href="#">About</a></li>
+               <ul class="tabs hide-on-small-only">
+                  <li class="txt-color tab"><a href="#home">Home</a></li>
+                  <li class="txt-color tab"><a href="#about">About</a></li>
                   <li class="txt-color tab"><a href="#contact">Contact</a></li>
-                  <li class="txt-color tab"><a href="#test3">Instructors</a></li>
-                  <li class="txt-color tab"><a href="#test4">Programs</a></li>
+                  <li class="txt-color tab"><a href="#instructors">Instructors</a></li>
+                  <li class="txt-color tab"><a href="#programs">Programs</a></li>
                 </ul>
 
              </div>
            </nav>
          </header>
-      <main>
+      <main class="containers">
       <div id="contact" class="col s12"><main class="container">
-        <form id="contact-form" class="container-fluid">
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="email" aria-describedby="formEmail" placeholder="Enter email">
+        <form id="contact-form" class="row container-fluid">
+          <div class="input-field">
+            <label class="active" for="email">Email address</label>
+            <input class="validate" class="form-control" id="email" type="email" placeholder="Enter email">
             <small id="formEmail" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Last Name</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          <div class="input-field">
+            <label class="active" for="last-name">Last Name</label>
+            <input type="text" class="form-control" id="last-name" placeholder="Last Name">
           </div>
-          <div class="form-group">
-            <label for="firstName">First Name</label>
-            <input type="password" class="form-control" id="firstName" placeholder="Password">
+          <div class="finput-field">
+            <label class="active" for="firstName">First Name</label>
+            <input type="text" class="input-field" id="firstName" placeholder="First Name">
           </div>
-          <div class="form-group">
-            <label for="subject">In Which Class Are You Interested</label>
-            <select class="form-control" id="subject">
+          <div class="input-field">
+            <label class="active" for="subject">In Which Class Are You Interested</label>
+            <select class="input-field" id="subject">
               <option>After School</option>
               <option>Summer Camp</option>
               <option>Tae Kwon Do</option>
@@ -136,31 +138,112 @@ tabs-transparent -->
               <option>Private Lessons</option>
             </select>
           </div>
-          <div class="form-group">
-            <label for="exampleSelect1">Student</label>
+          <div class="input-field">
+            <label class="active" for="exampleSelect1">Student</label>
             <select class="form-control" id="subject">
               <option>Yes</option>
               <option>No</option>
             </select>
           </div>
-          <div class="form-group">
-            <label for="exampleTextarea">Explain Your Needs</label>
-            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+          <div class="input-field">
+            <label class="active" for="explain">Explain Your Needs</label>
+            <textarea class="materialize-textarea" id="explain" rows="3"></textarea>
           </div>
-          <a type="submit" class="waves-effect waves-light btn transparent text-black">Schedule Your Appointment</a>
+          <a type="submit" class="waves-effect waves-light btn transparent text-black center">Schedule Your Appointment</a>
         </form>
       </div>
 
-    <div id="test3" class="col s12">Test 3</div>
-    <div id="test4" class="col s12">Test 4</div>
+    <div name="instructors" id="instructors" class="col s12 m9 l9 top-banner">
+      <div class="row container">
+        <h2 class="center">OUR INSTRUCTORS</h2>
+        <h3>LOREN TODD</h3>
+          <p>
+            Loren Todd joined the Louisiana Tech Karate team in September 2007 looking for a different workout. What she found instead was a love of the martial arts that would forever change the course her life. Loren began training in earnest under Dr. David Jordan and Buster Cotton the very day of her first lesson. Less than a year after joining the team, she was appointed team President, a position she officially held until May 2012. She was the first female president ever appointed and also the lowest ranked earning the position as a green belt. Loren started to help teach karate through the program offered at Louisiana Tech and assisted in those classes every school quarter but two from her junior year through earning her MBA. In doing so, she joined the ranks of many Louisiana Tech Karate Team members to unofficially earn a minor in Karate. Loren began teaching children’s classes in 2011 where she found a whole new side of the martial arts and discovered the joy of seeing children work to achieve their goals.  When her sensei and mentor had to take a medical leave from leading karate classes, Loren took over his school as head instructor where she taught until July 2015 when she moved to The Woodlands.  Her enthusiasm and dedication to the martial arts lead her to open The Dojo & Fit Club of Magnolia with the goal of continuing to teach karate to her community.
+          </p>
 
-    <div id="home" class="parallax-container valign-wrapper">
+        <h3>DAVID TODD</h3>
+          <p>
+            David Todd began his journey in Kumdo quite unexpectedly and at a later stage in life. He stumbled upon a newly opened Kumdo dojang (school) and stopped to visit because the sword arts had always fascinated him. David immediately began his training under Master Bokhyun (Abraham) Oh and through tireless hard work and dedication earned the rank of Cho Dan very quickly. He has traveled all across the country to compete in tournaments. His journey proves that the martial arts can be a program for anyone regardless of their age. Together with Master Oh, David formed the US Kumdo Academy in 2010. Since then, David has worked to spread the ancient art of Kumdo in the community. He has taught in several different schools and venues before finally finding a permanent location at The Dojo & Fit Club of Magnolia.
+          </p>
+
+        <h3>TINA BRITT</h3>
+          <p>
+            Tina Britt is a black belt under the Atlee Chittim / David Jordan linage of Korean Karate. She started training in the martial arts at the age of twelve under Sensei Toby Sinclair. In 2009, she had the privilege to study and assistant teach under Dr. David Jordan, 10th degree black belt and National Director of the United States Karate Alliance, while attending graduate school at Louisiana Tech University. During her years of competing in the martial arts, Tina has won seven national championships, three world championships, and one national grand championship. She is looking forward to training a new generation of martial artists.
+          </p>
+
+        <h3>ANDREA NOSKRENT</h3>
+          <p>
+            Andrea Noskrent has been instructing fitness classes for more than six years. She has taught Zumba, Pilates, boxing, boot camps, and a variety of other dance fitness classes. Additionally, Andrea organized and coordinated wellness programs for employees at Cameron International, Exxon, and West Houston Medical Center. Andrea has managed multiple half marathon running groups, mud runs, kickball tournaments, and fitness classes for employees. Andrea is truly passionate about fitness and the outdoors. She loves meeting new people and helping them work to achieve their fitness goals!
+          </p>
+
+        <h3>MARYANN LOTT</h3>
+          <p>
+            MaryAnn is an AFAA Certified Fitness Instructor with 16 years of professional experience in the fitness industry.  She began her career in Woodland, California working as the front desk receptionist and sales associate at Oasis Club and Spa.  Shortly thereafter she began group exercise instruction as well.  She has taught a variety of class formats including step aerobics, strength training, boot camps, indoor cycle/spin classes, and Pilates.  MaryAnn continued to pursue her passion for fitness as a sales associate and group fitness instructor when relocating to Texas with her family in 2010.  She is excited to be joining the team at The Dojo Fit &amp; Club where she will continue to work tirelessly to help others achieve results: living a stronger, healthier, leaner, and more energetic life.  You will find her at the front desk or teaching classes where her experience and skills in the fitness industry are second to none.  She is looking forward to helping The Woodlands and Magnolia communities find the perfect class among the many options offered at The Dojo Fit & Club.
+          </p>
+      </div>
+    </div>
+
+    <div id="about" class="col s12">
+      <div class="row container">
+        <div class="col s12 m6 l6">
+          <h2 class="center">ABOUT US</h2>
+          <p>
+            Founded in 2016, The Dojo and Fit Club is a martial arts school and fitness center that strives to provide a quality training experience for students both young and old. We stress the fundamentals of respect, discipline, and character while providing a full body workout. Our staff is dedicated to ensuring that our students reach their full potential whether that goal is losing weight and getting in shape, learning how to defend themselves, or winning championships. We accomplish this by staying active and competing ourselves for training in any form is truly a lifelong experience. We are very excited that you are considering joining our karate family, and it will be our pleasure to serve you and your family. Welcome to your martial arts journey.
+          </p>
+        </div>
+        <div class="col l4 m4">
+          <img class="responsive-img" src="./images/fists.jpg" alt="fists"/>
+        </div>
+      </div>
+    </div>
+    <div id="programs" class="col s12">
+      <div class="row container">
+        <h2 class="center">THE DOJO MARTIAL ARTS</h2>
+          <p>
+            Providing a variety of traditional styles to choose from, we have a class to meet your needs. Our programs are safe and fun and you’ll always get a great workout. Explore both the physical and mental benefits of studying the martial arts while working toward your black belt. We have classes for both children and adults. Each of our martial arts programs include separate tournament training for students who thrive on competition.
+          </p>
+          <br>
+        <h3>TAE KWON DO (KOREAN KARATE)</h3>
+          <p>
+            There are seven kwans or schools of Korean Tae Kwon Do.  The instruction of The Dojo & Fit Club follows the discipline of Chung Do Kwon which translates to “the gym of the blue wave.”  As in all schools of Tae Kwon Do, Chung Do Kwon places a major emphasis in training kicking techniques. The program encourages the development of muscular strength and flexibility while increasing cardiovascular endurance. In addition to the many physical benefits of Tae Kwon Do, students learn the importance of discipline and self confidence. Training in the Tae Kwon Do program will include several components: self-dense, practice in forms (kata), and sparring (kumite).
+          </p>
+        <h3>KUMDO</h3>
+          <p>
+            Kumdo is a traditional Korean sword martial art that has a very long and proud history.  In the 18th century, Kumdo was reshaped to its present form using a jukdo, a sword made up of four pieces of bamboo, and the hogu, head and body armor, making the art safer to practice.  With the jukdo and hogu, the style became more effective allowing stronger and more accurate blows without fear of injury.  Present day Kumdo has three components: inner strength signified by a loud yell (ki), the unbounded swing of the sword (kum), and physical strength (chae).  Together these components make up what is known as ki-kum-chae and is integral to both training and tournament competition.
+          </p>
+      </div>
+      <div class="row container">
+        <h2 class="center">THE FIT CLUB</h2>
+          <p>
+            The Fit Club is here to help you lose weight and get in shape! Our kickboxing class is an energetic and high intensity workout geared toward helping your meet your fitness goals. Kickboxing is a great way to burn off stress and the extra pounds. Best of all, this class is offered four nights a week! If you’re looking for one-on-one instruction, we are confident that our nationally accredited certified personal trainers and group fitness instructors will help you set, reach, and maintain your personal fitness goals. Our trainers are passionate fitness enthusiasts who truly care about the well-being of their clients.
+          </p>
+          <br>
+        <h3>KICKBOXING</h3>
+          <p>
+            Kickboxing can be traced back to the Muay Thai fighting style of Thailand more than 2000 years ago. However, the style became popular in the 1960s and 1970s as it evolved from a primarily self-defense oriented sport to a wildly successful competitive sport. Kickboxing in its modern form is a standing combat stance that allows both kicking and punching. The kickboxing program here at The Dojo & Fit Club is a combination of great cardio, instruction on the proper execution of kicking and punching techniques, and an overall full body workout. These classes are designed to be an energetic and fun exercise class with the added benefit of learning and practicing some effective techniques that can be used in self defense!
+          </p>
+        <h3>HIGH INTENSITY INTERVAL TRAINING</h3>
+          <p>
+            High Intensity Interval Training is a technique used to help you burn more fat in less time and quickly reach your peak performance. This full body workout is done by completing various drills at specific work to rest ratios designed to push yourself to the max and get in shape. Modifications can be made to ensure that everyone, regardless of fitness level, is getting the most out of their workout.
+          </p>
+        <h3>HIGH INTENSITY INTERVAL TRAINING AND TAE KWON DO</h3>
+          <p>
+            Have a child who is interested in martial arts? Receive 40% off of Tae Kwon Do lessons when you sign up for HIIT classes. Best of all, there’s no need to make more than one trip to the gym! HIIT classes are held while your child is studying beginning Tae Kwon Do.
+          </p>
+        <h3>PERSONAL TRAINING</h3>
+        <p>
+          Having a personal trainer has many benefits including having an accountability partner, fitness routines geared to your specific goals, consistent and nonjudgmental support, injury prevention and rehab, and a maximized workout in a minimized time frame. Personal training can be purchased in one-on-one and two-on-one packages and can be scheduled at the times most convenient to you.
+        </p>
+      </div>
+    </div>
+
+    <div id="home" class="parallax-container valign-wrapper active">
       <div class="section no-pad-bot">
         <div class="container">
           <div class="row center">
             <h1 class="header col s12 light white-text">MARTIAL ARTS</h1>
             <h5 class="header col s12 white-text light">FITNESS AND SELF DEFENSE FOR ALL AGES</h5>
-            <a class="waves-effect waves-light btn transparent">Schedule Your Appointment</a>
+            <a href="#contact" class="waves-effect waves-light btn transparent">Schedule Your Appointment</a>
             </div>
         </div>
       </div>
@@ -169,7 +252,7 @@ tabs-transparent -->
 
     <div class="section white z-depth-4">
       <div class="row container">
-        <h2 id="nopdbtm" class="header">WELCOME</h2>
+        <h2 id="nopdbtm" class="center header">WELCOME</h2>
       </div>
       <div class="row container">
         <p class="light left-align">At The Dojo and Fit Club, we help our students to reach their fitness goals through training in the martial arts, we build confidence and leadership skills in our youth, and we encourage the development of respect, discipline, and character from every one of our martial artists. We offer a venue for many various fitness goals: tournament competition, self-defense, weight loss, and general fitness. Our programs cultivate a community of people drawn together by the desire to train.</p>

@@ -1,19 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dojo &amp; Fit Club | Contact</title>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <title>Dojo &amp; Fit Club</title>
+</head>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
+<body class="parallax">
+  <header class="row">
+     <nav class="nav-extended">
+       <div class="nav-wrapper">
+
+         <a class="brand-logo center">
+           <span>
+             <img class="logo-png" src="./logo-nav.png" alt="logo" />
+           </span>
+         </a>
+
+         <a class="button-collapse" data-activates="mobileNav">
+           <i class="material-icons">menu</i>
+         </a>
+
+         <ul class="right hide-on-med-and-down">
+           <li><a href="/index.html">Home</a></li>
+           <li><a href="/collection.html"></a></li>
+           <li class="firstNavItem"></li>
+           <li class="secondNavItem"></li>
+         </ul>
+
+         <ul id="mobileNav" class="side-nav">
+           <li class="txt-color tab"><a href="#home">Home</a></li>
+           <li class="txt-color tab"><a href="#about">About</a></li>
+           <li class="txt-color tab"><a href="#contact">Contact</a></li>
+           <li class="txt-color tab"><a href="#instructors">Instructors</a></li>
+           <li class="txt-color tab"><a href="#programs">Programs</a></li>
+         </ul>
+
+       </div>
+     </nav>
+   </header>
   <body>
     <nav class="navbar navbar-light bg-faded">
       <a class="navbar-brand" href="#">Navbar</a>
@@ -85,49 +116,85 @@
       <h1>Martial Arts</h1>
       <h6>FITNESS AND SELF DEFENSE FOR ALL AGES</h6>
 
-      <form id="contact-form" class="container-fluid">
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="email" aria-describedby="formEmail" placeholder="Enter email">
-          <small id="formEmail" class="form-text text-muted">We'll never share your email with anyone else.</small>
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Last Name</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-        </div>
-        <div class="form-group">
-          <label for="firstName">First Name</label>
-          <input type="password" class="form-control" id="firstName" placeholder="Password">
-        </div>
-        <div class="form-group">
-          <label for="subject">In Which Class Are You Interested</label>
-          <select class="form-control" id="subject">
-            <option>After School</option>
-            <option>Summer Camp</option>
-            <option>Tae Kwon Do</option>
-            <option>Kumdo</option>
-            <option>Kickboxing</option>
-            <option>Personal Training</option>
-            <option>Group Fitness Classes</option>
-            <option>Private Lessons</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="exampleSelect1">Student</label>
-          <select class="form-control" id="subject">
-            <option>Yes</option>
-            <option>No</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="exampleTextarea">Explain Your Needs</label>
-          <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Schedule Your Appointment</button>
-      </form>
+      <div id="contact" class="col s12"><main class="container">
+        <form id="contact-form" class="row container-fluid">
+          <div class="input-field">
+            <label class="active" for="email">Email address</label>
+            <input class="validate" class="form-control" id="email" type="email" placeholder="Enter email">
+            <small id="formEmail" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="input-field">
+            <label class="active" for="last-name">Last Name</label>
+            <input type="text" class="form-control" id="last-name" placeholder="Last Name">
+          </div>
+          <div class="finput-field">
+            <label class="active" for="firstName">First Name</label>
+            <input type="text" class="input-field" id="firstName" placeholder="First Name">
+          </div>
+          <div class="input-field">
+            <label class="active" for="subject">In Which Class Are You Interested</label>
+            <select class="input-field" id="subject">
+              <option>After School</option>
+              <option>Summer Camp</option>
+              <option>Tae Kwon Do</option>
+              <option>Kumdo</option>
+              <option>Kickboxing</option>
+              <option>Personal Training</option>
+              <option>Group Fitness Classes</option>
+              <option>Private Lessons</option>
+            </select>
+          </div>
+          <div class="input-field">
+            <label class="active" for="exampleSelect1">Student</label>
+            <select class="form-control" id="subject">
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </div>
+          <div class="input-field">
+            <label class="active" for="explain">Explain Your Needs</label>
+            <textarea class="materialize-textarea" id="explain" rows="3"></textarea>
+          </div>
+          <a type="submit" class="waves-effect waves-light btn transparent text-black center">Schedule Your Appointment</a>
+        </form>
+      </div>
     </main>
 
-    <script type="text/javascript" src="/js/vendor/jquery-2.1.4.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
-  </body>
-</html>
+    <footer class="page-footer z-depth-2">
+      <div class="container center">
+        <div class="row">
+          <img src="./images/logo.png" alt="logo"/>
+        </div>
+        <div class="row">
+          <div class="col l6 m6 s12 right">
+            <h5 class="">Settings</h5>
+            <ul>
+              <li><a class="black-text" href=".index/#about">About Us</a></li>
+              <li><a class="black-text" href=".index/#instructors">Our Instructors</a></li>
+              <li><a class="black-text" href=".index/#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col l6 m5 s12 right">
+            <h5 class="">Connect with us today</h5>
+            <ul>
+              <li><a class="black-text" href="#!">Link 1</a></li>
+              <li><a class="black-text" href="#!">Link 2</a></li>
+              <li><a class="black-text" href="#!">Link 3</a></li>
+              <li><a class="black-text" href="#">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container black-text">
+        Made by <a class="orange-text orange-accent-2" href="">rsstdd</a>
+        </div>
+      </div>
+    </footer>
+
+     <!--  Scripts-->
+     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+     <script src="./js/mat.js"></script>
+ </body>
+ </html>

@@ -6,4 +6,5 @@
     $('.button-collapse').sideNav();
     $('select').material_select();
     $('ul.tabs').tabs();
+    $('select').material_select();
 })(jQuery);
