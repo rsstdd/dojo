@@ -1,4 +1,3 @@
-# dojo
 #The Dojo &amp; Fit Club
 
 
