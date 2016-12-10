@@ -3,6 +3,8 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+
+  <link rel='shortcut icon' href='favicon.png' type='image/x-icon'/ >
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
   <link rel="stylesheet" href="../css/styles.css">
@@ -58,20 +60,25 @@
 
     <main class="containers">
       <div id="contact" class="col s12"><main class="container">
+
         <form id="contact-form" class="row container-fluid">
+
           <div class="input-field">
             <label class="active" for="email">Email address</label>
             <input class="validate" class="form-control" id="email" type="email" placeholder="Enter email">
             <small id="formEmail" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
+
           <div class="input-field">
             <label class="active" for="last-name">Last Name</label>
             <input type="text" class="form-control" id="last-name" placeholder="Last Name">
           </div>
+
           <div class="finput-field">
             <label class="active" for="firstName">First Name</label>
             <input type="text" class="input-field" id="firstName" placeholder="First Name">
           </div>
+
           <div class="input-field">
             <label class="active" for="subject">In Which Class Are You Interested</label>
             <select class="input-field" id="subject">
@@ -85,6 +92,7 @@
               <option>Private Lessons</option>
             </select>
           </div>
+
           <div class="input-field">
             <label class="active" for="exampleSelect1">Student</label>
             <select class="form-control" id="subject">
@@ -92,10 +100,12 @@
               <option>No</option>
             </select>
           </div>
+
           <div class="input-field">
             <label class="active" for="explain">Explain Your Needs</label>
             <textarea class="materialize-textarea" id="explain" rows="3"></textarea>
           </div>
+          
           <a type="submit" class="waves-effect waves-light btn transparent text-black center">Schedule Your Appointment</a>
         </form>
       </div>
