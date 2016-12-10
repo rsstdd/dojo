@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint  --ignore-pattern public/js/vendor",
     "nf": "nf start",
-    "nodemon": "nodemon server.js"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
