@@ -1,15 +1,105 @@
+/***** =============== --- General Styles --- ================ ******/
+/*#*********========================================**************#*/
+
 main {
   margin-top: 100px;
 }
-.parallax-container {
-  /*margin-top: 100px;*/
+
+h1, h2, h3,
+h4, h5 , h6 {
+  text-transform: capitalize;
 }
-#padding {
-  height: 100px;
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
 }
+
+h3 {
+  font-size: 26px;
+}
+
 p {
   line-height: 2rem;
 }
+
+li. {
+  color: black;
+}
+
+a[type="submit"] {
+  color: black;
+}
+
+a[type="submit"]:hover {
+  color: #fe9308;
+  text-decoration-color: #fe9308;
+}
+
+.btn {
+  border: 1px solid #fe9308;
+  margin-top: 25px;
+}
+
+.orange-text {
+  color:  #fe9308;
+}
+
+
+/***** ================= --- Pseudo --- ======================= ******/
+/*#*********========================================**************#*/
+
+a:hover {
+  color: #fe9308;
+  font-weight: bolder;
+  /*text-decoration-color: #fe9308;*/
+  text-decoration: underline;
+}
+
+
+/***** --- Nav ---- ******/
+/*************************/
+nav {
+  background-color: #434554;
+  height: 90px;
+  padding-top: 100px;
+}
+  nav a {
+    color: black;
+    cursor: pointer;
+  }
+
+  nav .brand-logo.center {
+    margin-bottom: 40px;
+    /*margin-left: 45px;*/
+  }
+
+  .navbar-material .nav-wrapper .brand-logo img {
+      height: 60px;
+  }
+
+  .tabs .tab a {
+    color:  #544a43;
+  }
+
+  .tabs .tab a:hover {
+    color:  #fe9308;
+  }
+
+  ul .tabs .tab:active {
+    /*margins-top: 25px;*/
+    border-color: #544a43;
+  }
+
+
+/***** ================== --- Body --- ======================= ******/
+/*#*********========================================**************#*/
+
+/*
+#padding {
+  height: 100px;
+}*/
+
 .parallax-container {
   min-height: 380px;
   line-height: 0;
@@ -23,31 +113,62 @@ p {
     background-color: rgb(254, 147, 8, 0.65);
   }
 
-.btn {
-  border: 1px solid #fe9308;
-  margin-top: 25px;
-}
-nav {
-  background-color: #434554;
-}
-.navbar-material .nav-wrapper .brand-logo img {
-    height: 64px;
-}
+/***** ====================== --- Footer --- ======================= ******/
+/*#*********================================================**************/
 
 footer.page-footer {
   background-color: #fdfcfc;
   /*border: 3px solid #4e5162;*/
 }
+
+footer.page-footer {
+  margin: 0;
+}
+
+
+/***** ================= --- Parallax-1 Grapple --- ======================= ******/
+/*#*********=====================================================**************#*/
+.parallax-container {
+  height: 4500px;
+}
+/***** ================= --- Parallax-2 Kick --- ======================= ******/
+/*#*********==================================================**************#*/
+.parallax-container {
+  height: 650px;
+}
+
+#left-border {
+  border-left: 1px solid #fe9308;
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+
+#inner-trasparent {
+  background-color: rgba(85, 85, 85, 0.5);
+  padding: 25px;
+  width: 100%;
+}
+/***** ================= --- Media Query For Parallax-2 --- ======================= ******/
+/*#*********==============================================================**************#*/
+
 @media only screen and (max-width : 1076px) {
   #parallax-2 {
       height: 550px;
     }
 }
-@media only screen and (max-width : 1076px) {
+
+@media only screen and (max-width : 1000px) {
   #parallax-2 {
-      height: 700px;
+      height: 750px;
     }
 }
+
+@media only screen and (max-width : 900px) {
+  #parallax-2 {
+      height: 650px;
+    }
+}
+
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
@@ -58,133 +179,71 @@ footer.page-footer {
   }
 }
 
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
+@media only screen and (max-width : 780px) {
   #parallax-2 {
       height: 800px;
     }
 }
+@media only screen and (max-width : 776px) {
+  #parallax-2 {
+      height: 875px;
+    }
+}
+
+@media only screen and (max-width : 640px) {
+  #index-banner .section {
+    top: 0;
+  }
+  #parallax-2 {
+      height: 900px;
+    }
+}
+
+@media only screen and (max-width : 520px) {
+  #parallax-2 {
+      height: 1200px;
+    }
+}
+
 @media only screen and (max-width : 476px) {
   #parallax-2 {
       height: 1420px;
     }
 }
-.parallax-container {
-    height: 480px;
-  }
 
+/***** ================= --- 3 Col Section --- ======================= ******/
+/*#*********==============================================================**************#*/
 .icon-block {
   padding: 0 15px;
 }
+
 .icon-block .material-icons {
   font-size: inherit;
 }
-footer.page-footer {
-  margin: 0;
-}
-#inner-trasparent {
-  background-color: rgba(85, 85, 85, 0.5);
-  padding: 25px;
-  width: 100%;
-}
-#left-border {
-  border-left: 1px solid #fe9308;
-  padding-left: 15px;
-  padding-bottom: 15px;
-}
+
+
 #header {
   padding-bottom: 3px;
 }
-h1, h2, h3,
-h4, h5 , h6 {
-  text-transform: capitalize;
-}
+
 #nopdbtm {
   margin-bottom: 3px;
 }
 
-.orange-text {
-  color:  #fe9308;
-}
 
-li. {
-  color: black;
-}
 
-/*a:hover {
-  color: #feb454;
-  text-decoration: none;
+/*.top-banner {
+  margin-top: 20px;
 }*/
-
-a:hover {
-  color: #fe9308;
-  text-decoration-color: #fe9308;
-  text-decoration: underline;
-  font-weight: bolder;
-}
-
-.tabs .tab a {
-  color:  #544a43;
-}
-
-ul .tabs .tab :active {
-  border-bottom-color:
-}
-.logo-png {
-  padding-left: 47px;
-  padding-bottom: 35px;
-}
-a[type="submit"] {
-  color: black;
-}
-a[type="submit"]:hover {
-  color: #fe9308;
-  text-decoration-color: #fe9308;
-}
-
-
-/****forms****/
- /*label color */
-  /*.input-field label {
-    color: #000;
-  }*/
-  /* label focus color */
-  /*.input-field input[type=text]:focus + label {
-    color: #000;
-  }*/
-  /* label underline focus color */
-  /*.input-field input[type=text]:focus {
-    border-bottom: 1px solid #000;
-    box-shadow: 0 1px 0 0 #000;
-  }*/
-  /* valid color */
-  /*.input-field input[type=text].valid {
-    border-bottom: 1px solid #000;
-    box-shadow: 0 1px 0 0 #000;
-  }*/
-  /* invalid color */
-  /*.input-field input[type=text].invalid {
-    border-bottom: 1px solid #000;
-    box-shadow: 0 1px 0 0 #000;
-  }*/
-  /* icon prefix focus color */
-  /*.input-field .prefix.active {
-    color: #000;
-  }*/
-
-.top-banner {
-  margin-top: 100px;
-}
 
 #instructors h1, h2, h3 {
   font-family: 'Playfair Display', serif;
   color:  #c27645;
 }
-h2 {
-  font-size: 36px;
-}
-h3 {
-  font-size: 26px;
-}
+
+/*
+contact
+instructors
+about
+home
+*/
