@@ -27,11 +27,11 @@ li. {
   color: black;
 }
 
-a[type="submit"] {
+button[type="submit"] {
   color: black;
 }
 
-a[type="submit"]:hover {
+button[type="submit"]:hover {
   color: #fe9308;
   text-decoration-color: #fe9308;
 }

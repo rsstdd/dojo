@@ -59,29 +59,32 @@
      </header>
 
     <main class="containers">
-      <div id="contact" class="col s12"><main class="container">
+      <div id="contact" class="col s12">
+        <main class="container">
 
-        <form id="contact-form" class="row container-fluid">
+        <form id="contactForm" class="row container-fluid">
+
+    <!-- // action="https://formspree.io/rosstod@gmail.com" -->
 
           <div class="input-field">
             <label class="active" for="email">Email address</label>
-            <input class="validate" class="form-control" id="email" type="email" placeholder="Enter email">
+            <input name="email" class="validate" class="form-control" id="email" type="email" placeholder="Enter email">
             <small id="formEmail" class="form-text text-muted">We'll never share your email with anyone else.</small>
-          </div>
-
-          <div class="input-field">
-            <label class="active" for="last-name">Last Name</label>
-            <input type="text" class="form-control" id="last-name" placeholder="Last Name">
           </div>
 
           <div class="finput-field">
             <label class="active" for="firstName">First Name</label>
-            <input type="text" class="input-field" id="firstName" placeholder="First Name">
+            <input name="first-name" type="text" class="input-field" id="firstName" placeholder="First Name">
+          </div>
+
+          <div class="input-field">
+            <label class="active" for="last-name">Last Name</label>
+            <input name="last-name" type="text" class="form-control" id="last-name" placeholder="Last Name">
           </div>
 
           <div class="input-field">
             <label class="active" for="subject">In Which Class Are You Interested</label>
-            <select class="input-field" id="subject">
+            <select name="class" class="input-field" id="subject">
               <option>After School</option>
               <option>Summer Camp</option>
               <option>Tae Kwon Do</option>
@@ -95,7 +98,7 @@
 
           <div class="input-field">
             <label class="active" for="exampleSelect1">Student</label>
-            <select class="form-control" id="subject">
+            <select name="student" class="form-control" id="student">
               <option>Yes</option>
               <option>No</option>
             </select>
@@ -103,10 +106,10 @@
 
           <div class="input-field">
             <label class="active" for="explain">Explain Your Needs</label>
-            <textarea class="materialize-textarea" id="explain" rows="3"></textarea>
+            <textarea name="message" class="materialize-textarea" id="text" rows="3"></textarea>
           </div>
-          
-          <a type="submit" class="waves-effect waves-light btn transparent text-black center">Schedule Your Appointment</a>
+
+          <button id="form" type="submit" name="action" class="waves-effect waves-light btn transparent text-black">Schedule Your Appointment</button>
         </form>
       </div>
 
@@ -312,5 +315,6 @@
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
     <script src="./js/mat.js"></script>
+    <script src="./js/contact.js"></script>
 </body>
 </html>
